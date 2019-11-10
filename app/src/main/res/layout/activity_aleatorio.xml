@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:gravity="top"
+        android:text="Generador de aleatorios"
+        android:textSize="30sp"></TextView>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+
+        >
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/grupoRadios"
+                >
+                <RadioButton
+                    android:checked="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sin rango"
+                    android:id="@+id/SinRango">
+
+                </RadioButton>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Con rango"
+                    android:id="@+id/ConRango">
+                </RadioButton>
+            </RadioGroup>
+
+            <TableRow>
+                <EditText
+                    android:hint="mínimo"
+                    android:inputType="number"
+                    android:id="@+id/minimo"/>
+                <EditText
+                    android:hint="máximo"
+                    android:inputType="number"
+                    android:id="@+id/maximo"/>
+            </TableRow>
+            <TableRow>
+                <CheckBox
+                    android:text="Permitir decimales"
+                    android:id="@+id/cPermitir"/>
+                <EditText
+                    android:hint="numero de decimales"
+                    android:inputType="number"
+                    android:id="@+id/PermitirDecimales"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:hint="Cuantos Quieres"
+                    android:inputType="number"/>
+                <EditText
+                    android:hint="numero de totales"
+                    android:inputType="number"
+                    android:id="@+id/totales"/>
+            </TableRow>
+
+
+        </TableLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp">
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Switch
+                android:text="Repetir numeros     "
+                android:thumb="@drawable/repeat"
+                android:id="@+id/repetir"
+                />
+        </TableLayout>
+
+    </LinearLayout>
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/launcher"
+        android:layout_gravity="center"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:id="@+id/cohete">
+    </ImageButton>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Resultado"
+        android:id="@+id/resultado">
+    </TextView>
+
+</LinearLayout>

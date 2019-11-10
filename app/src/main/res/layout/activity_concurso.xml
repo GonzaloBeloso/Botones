@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp">
+        <TableRow>
+            <TextView
+                android:hint="Introduce nombre">
+            </TextView>
+            <EditText
+                android:hint="nombre"
+                android:id="@+id/nombre">
+            </EditText>
+        </TableRow>
+        <TableRow
+            android:layout_margin="0dp">
+            <Button
+                android:text="Generar Ganador"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:id="@+id/generar">
+            </Button>
+            <Button
+                android:text="Agregar Concursante"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:id="@+id/agregar">
+            </Button>
+        </TableRow>
+        <TextView
+            android:hint="Ganador"
+            android:layout_gravity="center"
+            android:textSize="30sp"
+            android:id="@+id/Ganador"></TextView>
+    </TableLayout>
+</LinearLayout>
